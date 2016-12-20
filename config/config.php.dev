@@ -1,4 +1,15 @@
 <?php
+/**
+ * DEBUG Level
+ * 0 = off (production)
+ * 1 = stack trace に引数を付加
+ */
+define("DEBUG", 0);
+
+// log
+define('LOG_LEVEL', \Monolog\Logger::INFO); // DEBUG|INFO|NOTICE|WARNING|ERROR|CRITICAL|ALERT|EMERGENCY
+define('LOG_MAXDAYS', 90);  // 0 = infinity
+
 // database
 define("DATABASE_HOST", "localhost");
 define("DATABASE_NAME", "test_db");

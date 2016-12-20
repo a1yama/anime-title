@@ -1,6 +1,8 @@
 <?php
 namespace Acme\App;
 
+require __DIR__ . "/../bootstrap.php";
+
 class Wikipedia
 {
     /**
@@ -8,10 +10,11 @@ class Wikipedia
      * @param $url
      * @return array
      */
-    public static function run($client, $url)
+    public static function run()
     {
+        $client = new \Goutte\Client();
 
-        $crawler = $client->request('GET', $url);
+        $crawler = $client->request('GET', SEARCH_URL);
         $obj = $crawler->filter('table.wikitable tr td');
 
         $title_and_company = [];

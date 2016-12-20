@@ -1,5 +1,6 @@
 {
     "require": {
+        "pimple/pimple": "3.0.*",
         "fabpot/goutte": "^3.1",
         "monolog/monolog": "^1.17"
     },

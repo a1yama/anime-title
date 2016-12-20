@@ -1,9 +1,6 @@
 <?php
 
-require __DIR__ . "/../vendor/autoload.php";
-require __DIR__ . "/../config/config.php";
+require __DIR__ . "/../bootstrap.php";
 
-$url = SEARCH_URL;
-$client = new Goutte\Client();
-$title_and_company = \Acme\App\Wikipedia::run($client, $url);
-var_dump($title_and_company);
+$title_and_company = \Acme\App\Wikipedia::run();
+\Model\AnimeTitle::insert($title_and_company);
