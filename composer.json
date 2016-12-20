@@ -9,7 +9,11 @@
     },
     "autoload": {
         "psr-4": {
-            "Acme\\App\\": "./src"
+            "Acme\\App\\": "./src",
+            "Model\\": "./bin/model",
+            "Db\\": "./bin/db",
+            "Framework\\": "./bin/framework",
+            "Dao\\": "./bin/dao"
         }
     }
 }
