@@ -1,7 +1,7 @@
 <?php
 namespace Model;
 
-require __DIR__ . "/../bootstrap.php";
+use Container;
 
 class AnimeTitle
 {

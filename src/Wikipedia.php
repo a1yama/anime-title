@@ -1,8 +1,6 @@
 <?php
 namespace Acme\App;
 
-require __DIR__ . "/../bootstrap.php";
-
 class Wikipedia
 {
     /**

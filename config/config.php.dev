@@ -5,6 +5,7 @@
  * 1 = stack trace に引数を付加
  */
 define("DEBUG", 0);
+define('LOG_DIR', __DIR__.'/../logs');
 
 // log
 define('LOG_LEVEL', \Monolog\Logger::INFO); // DEBUG|INFO|NOTICE|WARNING|ERROR|CRITICAL|ALERT|EMERGENCY
